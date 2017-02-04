@@ -12,6 +12,10 @@ parserOptions:
 plugins:
     - 'react'
 
+globals:
+    React: true
+    ReactDOM: true
+
 rules:
     no-console: [ 'off' ]
     react/jsx-uses-vars: [2]
