@@ -1,9 +1,7 @@
-import React from 'react'
-import { render } from 'react-dom'
+const { render } = ReactDOM
 
 import App from './components/App'
 
-render(
-    <App/>,
-    document.getElementById( 'root' )
-)
+const mountPoint = document.getElementById( 'root' )
+
+render( <App/>, mountPoint )
