@@ -6,7 +6,7 @@ const cssModules = require( '@webpack-blocks/css-modules' )
 const postcss = require( '@webpack-blocks/postcss' )
 const babel = require( '@webpack-blocks/babel6' )
 const autoprefixer = require( 'autoprefixer' )
-const plugins = require('./webpack.plugins')
+const plugins = require('./webpack.plugins.js')
 
 module.exports = createConfig( [
     setOutput( './build/app.js' ),
