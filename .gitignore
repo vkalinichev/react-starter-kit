@@ -1,0 +1,14 @@
+
+# Libraries
+node_modules/
+
+# Build
+build
+
+# Dev trash
+.idea/
+
+# System trash
+.DS_Store
+*.log
+Thumbs.db
