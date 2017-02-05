@@ -1,5 +1,7 @@
 const { webpack } = require( '@webpack-blocks/webpack2' )
 const HtmlWebpackPlugin = require( 'html-webpack-plugin' )
+const OpenBrowserPlugin = require( 'open-browser-webpack-plugin' )
+const config = require( './config' )
 
 exports.basePlugins = [
     new webpack.ProvidePlugin( {
@@ -10,6 +12,10 @@ exports.basePlugins = [
         inject: true,
         template: './src/index.html'
     } )
+]
+
+exports.developmentPlugins = [
+    new OpenBrowserPlugin( { url: `http://localhost:${ config.devServerPort }` } )
 ]
 
 exports.productionPlugins = [

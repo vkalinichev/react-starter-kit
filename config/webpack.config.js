@@ -6,7 +6,8 @@ const cssModules = require( '@webpack-blocks/css-modules' )
 const postcss = require( '@webpack-blocks/postcss' )
 const babel = require( '@webpack-blocks/babel6' )
 const autoprefixer = require( 'autoprefixer' )
-const plugins = require('./webpack.plugins.js')
+const plugins = require( './webpack.plugins.js' )
+const devServerConfig = require( './webpack.dev-server.config' )
 
 module.exports = createConfig( [
     setOutput( './build/app.js' ),
@@ -18,8 +19,9 @@ module.exports = createConfig( [
     } ),
     env( 'development', [
         entryPoint( './src/index.dev.js' ),
-        devServer(),
-        sourceMaps()
+        devServer( devServerConfig ),
+        sourceMaps(),
+        addPlugins( plugins.developmentPlugins )
     ] ),
     env( 'production', [
         entryPoint( './src/index.js' ),
