@@ -5081,6 +5081,10 @@ underscore@~1.4.4:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.4.4.tgz#61a6a32010622afa07963bf325203cf12239d604"
 
+uniq-port:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/uniq-port/-/uniq-port-1.0.0.tgz#de288b5203a9b943093d68ed7acf28b5f0fad777"
+
 uniq@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/uniq/-/uniq-1.0.1.tgz#b31c5ae8254844a3a8281541ce2b04b865a734ff"

@@ -20,7 +20,8 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-hot-loader": "3.0.0-beta.6",
-    "styled-components": "^1.4.3"
+    "styled-components": "^1.4.3",
+    "uniq-port": "^1.0.0"
   },
   "devDependencies": {
     "@webpack-blocks/babel6": "^0.4.0",
