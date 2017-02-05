@@ -1,0 +1,68 @@
+.button {
+    margin-right: .6em;
+    margin-bottom: .6em;
+    padding: .35em .6em .33em;
+
+    border: none;
+    border-radius: .2em;
+
+    cursor: pointer;
+
+    font-family: sans-serif;
+    font-size: inherit;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.button:last-child {
+    margin-right: 0;
+}
+
+.basic {
+    background: white;
+    box-shadow: 0 0 0 1px hsla( 0, 0%, 0%, .2 ) inset;
+    color: black;
+}
+
+.primary {
+    background: dodgerblue;
+    color: white;
+    box-shadow: none;
+}
+
+.info {
+    background: #cef;
+}
+
+.success {
+    background: lightgreen;
+}
+
+.warning {
+    background: darkorange;
+}
+
+.danger {
+    background: darkred;
+    color: white;
+}
+
+.loading {
+
+}
+
+.disabled {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.link {
+    background: none;
+    border-color: transparent;
+    box-shadow: none;
+    color: dodgerblue;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

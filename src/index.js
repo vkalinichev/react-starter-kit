@@ -1,4 +1,5 @@
 const { render } = ReactDOM
+import './index.css'
 
 import App from './components/App'
 

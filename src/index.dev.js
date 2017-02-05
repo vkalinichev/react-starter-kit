@@ -3,6 +3,7 @@ import { AppContainer } from 'react-hot-loader'
 const { render } = ReactDOM
 
 import App from './components/App'
+import './index.css'
 
 const mountPoint = document.getElementById( 'root' )
 

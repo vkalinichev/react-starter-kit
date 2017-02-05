@@ -12,19 +12,20 @@ const devServerConfig = require( './webpack.dev-server.config' )
 module.exports = createConfig( [
     setOutput( './build/app.js' ),
     babel(),
-    cssModules(),
     addPlugins( plugins.basePlugins ),
     defineConstants( {
         'process.env.NODE_ENV': process.env.NODE_ENV
     } ),
     env( 'development', [
         entryPoint( './src/index.dev.js' ),
+        cssModules( { localIdentName: '[name]__[local]' }),
         devServer( devServerConfig ),
         sourceMaps(),
         addPlugins( plugins.developmentPlugins )
     ] ),
     env( 'production', [
         entryPoint( './src/index.js' ),
+        cssModules( { localIdentName: '[hash:base64:10]' }),
         postcss( [
             autoprefixer( { browsers: [ 'last 2 versions' ] } )
         ] ),
