@@ -4,10 +4,7 @@ const OpenBrowserPlugin = require( 'open-browser-webpack-plugin' )
 const config = require( './config' )
 
 exports.basePlugins = [
-    new webpack.ProvidePlugin( {
-        'React': 'react',
-        'ReactDOM': 'react-dom'
-    } ),
+    new webpack.ProvidePlugin( {} ),
     new HtmlWebpackPlugin( {
         inject: true,
         template: './src/index.html'

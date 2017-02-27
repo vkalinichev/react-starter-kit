@@ -1,9 +1,12 @@
 import App from './components/App'
 
+import React from 'react'
+import { render } from 'react-dom'
+
 describe( 'Index', () => {
 
     it( 'renders correctly', () => {
-        ReactDOM.render( <App/>, document.createElement( 'div' ) )
+        render( <App/>, document.createElement( 'div' ) )
     })
 
 } )

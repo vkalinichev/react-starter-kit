@@ -1,7 +1,7 @@
+import React from 'react'
 import 'react-hot-loader/patch'
+import { render } from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
-const { render } = ReactDOM
-
 import App from './components/App'
 import './index.css'
 
@@ -15,7 +15,7 @@ renderApp( App )
 
 if ( module.hot ) {
     module.hot.accept( './components/App', () => {
-        const NewApp = require( './components/App' ).default
+        const NewApp = require( './components/App' )[ 'default' ]
 
         renderApp( NewApp )
     } )

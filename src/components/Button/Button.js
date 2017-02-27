@@ -1,5 +1,6 @@
-import * as styles from './Button.css'
+import React from 'react'
 import classNames from 'classnames/bind'
+import * as styles from './Button.css'
 const cx = classNames.bind( styles )
 
 const Button = ({ children, primary, success, info, warning, danger, link, disabled, loading }) => {
