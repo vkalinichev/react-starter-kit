@@ -4,9 +4,9 @@
   "description": "yet another lite react/redux boilerplate",
   "main": "src/index.js",
   "scripts": {
-    "build": "NODE_ENV=production webpack --config ./config/webpack.config.js",
-    "start": "NODE_ENV=development webpack-dev-server --config ./config/webpack.config.js",
-    "test": "jest"
+    "build": "react-app-rewired build",
+    "start": "react-app-rewired start",
+    "test": "react-app-rewired test"
   },
   "repository": {
     "url": "https://github.com/vkalinichev/react-starter-kit.git",
@@ -15,8 +15,9 @@
   "author": "Vladimir Kalinichev <wrumly@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "autoprefixer": "^6.7.2",
     "classnames": "^2.2.5",
-    "open-browser-webpack-plugin": "^0.0.3",
+    "postcss-rtl": "^0.5.9",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-hot-loader": "3.0.0-beta.6",
@@ -24,21 +25,8 @@
     "uniq-port": "^1.0.0"
   },
   "devDependencies": {
-    "@webpack-blocks/babel6": "^0.4.0",
-    "@webpack-blocks/css-modules": "^0.4.0",
-    "@webpack-blocks/dev-server2": "^0.4.0",
-    "@webpack-blocks/postcss": "^0.4.0",
-    "@webpack-blocks/webpack2": "^0.4.0",
-    "autoprefixer": "^6.7.2",
-    "babel": "^6.5.2",
-    "babel-preset-latest": "^6.22.0",
-    "babel-preset-react": "^6.22.0",
-    "eslint": "^3.15.0",
-    "eslint-plugin-react": "^6.9.0",
-    "html-webpack-plugin": "^2.28.0",
-    "jest": "^18.1.0",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.3.0"
+    "react-app-rewired": "^0.6.5",
+    "react-scripts": "^0.9.5"
   },
   "jest": {
     "setupFiles": [
